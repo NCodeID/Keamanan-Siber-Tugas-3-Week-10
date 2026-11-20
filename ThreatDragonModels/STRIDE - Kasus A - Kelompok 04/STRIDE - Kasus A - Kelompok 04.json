@@ -23,7 +23,7 @@
     "diagrams": [
       {
         "id": 0,
-        "title": "New STRIDE diagram",
+        "title": "Sistem Presensi Perkuliahan Berbasis QR Code",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
@@ -1927,7 +1927,8 @@
             },
             "zIndex": 16
           }
-        ]
+        ],
+        "description": "DFD Seadanya"
       }
     ],
     "diagramTop": 1,
