@@ -1,0 +1,38 @@
+{
+  "version": "2.6.2",
+  "release_version": "1.0.0",
+  "released_at": "2026-11-20",
+  "summary": {
+    "title": "STRIDE - Kasus A - Kelompok 04",
+    "owner": "Kelompok 04 (Keamanan Siber CAK3CAB3)",
+    "description": "Sistem Presensi Perkuliahan Berbasis QR Code adalah layanan berbasis web yang digunakan sebuah perguruan tinggi untuk mencatat kehadiran mahasiswa secara digital. Dosen membuka sesi presensi untuk kelas yang diampu, sistem menghasilkan QR code yang ditampilkan di ruang kelas, mahasiswa memindai QR tersebut melalui browser, dan backend memvalidasi kehadiran sebelum mencatatnya ke Database Akademik. Sesi presensi berlaku lima menit dan dapat ditutup lebih awal oleh dosen. Admin akademik dapat melihat rekap kehadiran seluruh kelas melalui antarmuka web.\nSistem beroperasi pada level komponen utama (bukan detail infrastruktur) dan mencakup empat fungsi inti: pembukaan sesi, pemindaian QR, validasi kehadiran, dan pembacaan rekap. Pendaftaran mata kuliah dan perubahan nilai berada di luar lingkup.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Natan Winson Pratama"
+      },
+      {
+        "name": "Fathan Aditya Rachman"
+      },
+      {
+        "name": "Andi Muh Arief Alfaizi Ilham"
+      }
+    ],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "New STRIDE diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": []
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
