@@ -28,7 +28,415 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.6.2",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 119.99999999999989,
+              "y": 30
+            },
+            "size": {
+              "width": 350,
+              "height": 470
+            },
+            "attrs": {
+              "label": {
+                "text": "TB1 - Perangkat Pengguna ke Jaringan"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "e65aa234-f20e-4c66-9d8e-83f35258f26b",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB1 - Perangkat Pengguna ke Jaringan",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "f3777a97-106a-4dcd-b886-937934719149",
+                "2a9c9b49-6351-4177-bcd7-17be790569ad"
+              ],
+              "containedElements": [
+                "f0e84d3c-eea8-46d1-8646-18c595c2a327"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 729.9999999999989,
+              "y": 30
+            },
+            "size": {
+              "width": 340,
+              "height": 470
+            },
+            "attrs": {
+              "label": {
+                "text": "TB2 - Antarmuka Web ke Backend"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "83f6f660-91a6-4a60-bf73-a786600c960f",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB2 - Antarmuka Web ke Backend",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "f3777a97-106a-4dcd-b886-937934719149",
+                "2a9c9b49-6351-4177-bcd7-17be790569ad"
+              ],
+              "containedElements": [
+                "c16acc21-d325-458f-806b-02a0f313fd7b"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 174.9999999999999,
+              "y": 100
+            },
+            "size": {
+              "width": 240,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "E3 Admin Akademik"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b58560d1-198f-4786-8fae-7fd3e152a874"
+                },
+                {
+                  "group": "right",
+                  "id": "277df102-72f7-4d31-9cb0-5328a78c03c1"
+                },
+                {
+                  "group": "bottom",
+                  "id": "5e24ab40-50ee-44ca-8c15-a2031c8980f5"
+                },
+                {
+                  "group": "left",
+                  "id": "7513f7ca-46a6-468f-87b0-17beb912a621"
+                }
+              ]
+            },
+            "id": "f0e84d3c-eea8-46d1-8646-18c595c2a327",
+            "zIndex": 0,
+            "data": {
+              "type": "tm.Actor",
+              "name": "E3 Admin Akademik",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 799.9999999999989,
+              "y": 130.0000000000005
+            },
+            "size": {
+              "width": 200,
+              "height": 230
+            },
+            "attrs": {
+              "text": {
+                "text": "P1 - Antarmuka Web"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b4bda918-efc3-441d-803b-7da8bb503a3e"
+                },
+                {
+                  "group": "right",
+                  "id": "7ba09570-1f86-47cf-815a-0247ed221a36"
+                },
+                {
+                  "group": "bottom",
+                  "id": "b88b6759-6704-4507-aad6-a405c96488c7"
+                },
+                {
+                  "group": "left",
+                  "id": "56248945-1163-4f66-8fc2-9aa9524b3047"
+                }
+              ]
+            },
+            "id": "c16acc21-d325-458f-806b-02a0f313fd7b",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Process",
+              "name": "P1 - Antarmuka Web",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "e65aa234-f20e-4c66-9d8e-83f35258f26b",
+                "83f6f660-91a6-4a60-bf73-a786600c960f"
+              ]
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "f3777a97-106a-4dcd-b886-937934719149",
+            "source": {
+              "cell": "c16acc21-d325-458f-806b-02a0f313fd7b",
+              "port": "56248945-1163-4f66-8fc2-9aa9524b3047"
+            },
+            "target": {
+              "cell": "f0e84d3c-eea8-46d1-8646-18c595c2a327",
+              "port": "277df102-72f7-4d31-9cb0-5328a78c03c1"
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 130
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "F12 Minta rekap",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "e65aa234-f20e-4c66-9d8e-83f35258f26b",
+                "83f6f660-91a6-4a60-bf73-a786600c960f"
+              ]
+            },
+            "labels": [
+              "F12 Minta rekap"
+            ],
+            "id": "2a9c9b49-6351-4177-bcd7-17be790569ad",
+            "source": {
+              "cell": "f0e84d3c-eea8-46d1-8646-18c595c2a327",
+              "port": "277df102-72f7-4d31-9cb0-5328a78c03c1"
+            },
+            "target": {
+              "cell": "c16acc21-d325-458f-806b-02a0f313fd7b",
+              "port": "56248945-1163-4f66-8fc2-9aa9524b3047"
+            }
+          }
+        ]
       }
     ],
     "diagramTop": 1,
