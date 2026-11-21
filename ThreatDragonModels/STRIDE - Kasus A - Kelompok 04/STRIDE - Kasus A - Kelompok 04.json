@@ -125,8 +125,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "156dbb19-b189-497a-908f-e8eb805a21dc",
             "zIndex": -1,
+            "id": "156dbb19-b189-497a-908f-e8eb805a21dc",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB3 - Backend ke Autentikasi",
@@ -158,6 +158,7 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
+            "zIndex": -1,
             "id": "66d42881-5cd3-4ce5-bf27-15cc62e64680",
             "data": {
               "type": "tm.BoundaryBox",
@@ -175,8 +176,7 @@
                 "14084759-7f89-4ecd-84e5-c2321d28b95b",
                 "a53ac302-d9c9-4f9e-bc34-482650c51297"
               ]
-            },
-            "zIndex": -1
+            }
           },
           {
             "position": {
@@ -298,11 +298,11 @@
           {
             "position": {
               "x": 799.9999999999989,
-              "y": 130.0000000000005
+              "y": 145.0000000000005
             },
             "size": {
               "width": 200,
-              "height": 230
+              "height": 200
             },
             "attrs": {
               "text": {
@@ -467,7 +467,7 @@
             "vertices": [
               {
                 "x": 650,
-                "y": 130
+                "y": 140
               }
             ]
           },
@@ -621,7 +621,7 @@
             "vertices": [
               {
                 "x": 660,
-                "y": 290
+                "y": 300
               }
             ]
           },
@@ -676,7 +676,7 @@
             "vertices": [
               {
                 "x": 630,
-                "y": 380
+                "y": 390
               }
             ]
           },
@@ -731,7 +731,7 @@
             "vertices": [
               {
                 "x": 700,
-                "y": 420
+                "y": 430
               }
             ]
           },
@@ -884,7 +884,7 @@
             "vertices": [
               {
                 "x": 1140,
-                "y": 190
+                "y": 180
               }
             ]
           },
@@ -937,7 +937,7 @@
             },
             "vertices": [
               {
-                "x": 1150,
+                "x": 1140,
                 "y": 300
               }
             ]
@@ -1041,7 +1041,7 @@
             "vertices": [
               {
                 "x": 1600,
-                "y": 270
+                "y": 280
               }
             ]
           },
@@ -1095,7 +1095,7 @@
             "vertices": [
               {
                 "x": 1580,
-                "y": 227
+                "y": 237
               }
             ]
           },
@@ -1149,7 +1149,7 @@
             "vertices": [
               {
                 "x": 1570,
-                "y": 150
+                "y": 160
               }
             ]
           },
@@ -1203,7 +1203,7 @@
             "vertices": [
               {
                 "x": 1540,
-                "y": 75
+                "y": 85
               }
             ]
           },
@@ -1228,6 +1228,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1321,8 +1322,7 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "zIndex": 11
+            }
           },
           {
             "position": {
@@ -1345,6 +1345,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1438,17 +1439,16 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "zIndex": 12
+            }
           },
           {
             "position": {
               "x": 1271.9999999999989,
-              "y": 130.0000000000005
+              "y": 150.00000000000023
             },
             "size": {
               "width": 200,
-              "height": 230
+              "height": 180
             },
             "attrs": {
               "text": {
@@ -1582,6 +1582,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1665,7 +1666,6 @@
               ]
             },
             "id": "2668584d-43e5-4686-a15e-f54dd04dbe76",
-            "zIndex": 14,
             "data": {
               "type": "tm.Actor",
               "name": "E4 Layanan Autentikasi \nKampus",
@@ -1703,6 +1703,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1786,7 +1787,6 @@
               ]
             },
             "id": "14084759-7f89-4ecd-84e5-c2321d28b95b",
-            "zIndex": 15,
             "data": {
               "type": "tm.Store",
               "name": "DS2 \nPenyimpanan\nSesi",
@@ -1827,6 +1827,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -1924,8 +1925,7 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "zIndex": 16
+            }
           }
         ],
         "description": "DFD Seadanya"
