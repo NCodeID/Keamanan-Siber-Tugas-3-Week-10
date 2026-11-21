@@ -309,8 +309,8 @@
                 "text": "P1 - Antarmuka Web"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -407,12 +407,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "14c1e452-f4f7-4aec-9b84-6d268e35f964",
+                  "title": "Scan foto QR code dari luar ruang kelas",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Berikan deskripsi untuk ancaman ini",
+                  "mitigation": "Berikan remediasi untuk ancaman ini atau alasan jika status adalah N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             },
             "children": []
           },
@@ -739,7 +761,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -760,16 +783,35 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "91016f24-f5c1-4f89-a867-eb707005ffb3",
+                  "title": "Data login atau token disadap di jaringan",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Berikan deskripsi untuk ancaman ini",
+                  "mitigation": "Berikan remediasi untuk ancaman ini atau alasan jika status adalah N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
               "trustBoundaryIds": [
                 "83f6f660-91a6-4a60-bf73-a786600c960f",
                 "156dbb19-b189-497a-908f-e8eb805a21dc"
-              ]
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "F15 Autentikasi"
@@ -892,7 +934,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -913,15 +956,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "7a02e8bf-b70f-4da5-aba3-54c19fc0c264",
+                  "title": "Mengubah data sesi atau token saat kirim presensi",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Berikan deskripsi untuk ancaman ini",
+                  "mitigation": "Berikan remediasi untuk ancaman ini atau alasan jika status adalah N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
               "trustBoundaryIds": [
                 "83f6f660-91a6-4a60-bf73-a786600c960f"
-              ]
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "F6 Validasi Kehadiran "
@@ -969,7 +1031,7 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
-              "isEncrypted": false,
+              "isEncrypted": true,
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
@@ -1221,8 +1283,8 @@
                 "text": "E1 Mahasiwa"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1319,9 +1381,27 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "6f9be1de-7d5f-4cdb-bfa5-bf71cbd167ec",
+                  "title": "Login dan scan QR pakai akun mahasiswa lain(titip absen)",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Berikan deskripsi untuk ancaman ini",
+                  "mitigation": "Berikan remediasi untuk ancaman ini atau alasan jika status adalah N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -1455,8 +1535,8 @@
                 "text": "P2 - Backend Presensi\n"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1553,12 +1633,80 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "753a3f93-321a-47c5-8d19-a5ad07d127d2",
+                  "title": "Presensi ganda atau lewat batas waktu 5 menit",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Berikan deskripsi untuk ancaman ini",
+                  "mitigation": "Berikan remediasi untuk ancaman ini atau alasan jika status adalah N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                },
+                {
+                  "id": "a2e08dba-0d34-4bdc-86e7-143791d78aca",
+                  "title": "Aktivitas buka/tutup sesi dan presensi tidak bisa dilacak",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "Berikan deskripsi untuk ancaman ini",
+                  "mitigation": "Berikan remediasi untuk ancaman ini atau alasan jika status adalah N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                },
+                {
+                  "id": "baca1f71-6371-45b6-8504-75ff7ec7b12b",
+                  "title": "Server dibanjiri request saat sesi 5 menit berlangsung",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Berikan deskripsi untuk ancaman ini",
+                  "mitigation": "Berikan remediasi untuk ancaman ini atau alasan jika status adalah N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                },
+                {
+                  "id": "5aec647e-8e6e-4ef6-aa53-207eebc08d25",
+                  "title": "Mahasiswa mengakses fitur dosen atau rekap admin",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege",
+                  "description": "Berikan deskripsi untuk ancaman ini",
+                  "mitigation": "Berikan remediasi untuk ancaman ini atau alasan jika status adalah N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1817,11 +1965,13 @@
                 "text": "DS1\nDatabase\nAkademik"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1918,13 +2068,33 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "2eb7b510-6dd5-4af5-86df-39b93aafc3f8",
+                  "title": "Data rekap kehadiran diakses pihak yang tidak berhak",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Berikan deskripsi untuk ancaman ini",
+                  "mitigation": "Berikan remediasi untuk ancaman ini atau alasan jika status adalah N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             }
           }
         ],
@@ -1933,6 +2103,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 11
   }
 }
