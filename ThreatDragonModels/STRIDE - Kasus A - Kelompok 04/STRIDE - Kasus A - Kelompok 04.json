@@ -50,7 +50,7 @@
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB1 - Perangkat Pengguna ke Jaringan",
-              "description": "",
+              "description": "Memisahkan perangkat mahasiswa/dosen/admin dari layanan kampus. Input tidak tepercaya masuk di sini (DF1, DF5, DF11, DF12, DF14). Titik validasi wajib.",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
@@ -89,7 +89,7 @@
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB2 - Antarmuka Web ke Backend",
-              "description": "",
+              "description": "Memisahkan lapisan presentasi dari logika keputusan. Otorisasi dan validasi server-side ditegakkan setelah batas ini (DF2, DF4, DF6, DF11, DF12). Titik otorisasi wajib.",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
@@ -130,7 +130,7 @@
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB3 - Backend ke Autentikasi",
-              "description": "",
+              "description": "Memisahkan backend dari layanan autentikasi kampus. Verifikasi identitas pengguna (DF7). Kepercayaan antar-layanan.",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
@@ -163,7 +163,7 @@
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB4 -  Backend ke Lapisan Data",
-              "description": "",
+              "description": "Memisahkan logika aplikasi dari penyimpanan sensitif (DF3, DF8, DF9, DF10, DF13). Titik integritas & kerahasiaan data.",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
@@ -286,7 +286,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "E3 Admin Akademik",
-              "description": "",
+              "description": "Aktor manusia. Melihat rekap presensi seluruh kelas. Aset terkait: A5 data rekap presensi.",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -403,7 +403,7 @@
             "data": {
               "type": "tm.Process",
               "name": "P1 - Antarmuka Web",
-              "description": "",
+              "description": "Lapisan presentasi: menampilkan QR, form scan, dashboard rekap. Tidak otoritatif — hanya meneruskan request ke backend. Aset terkait: A1 token QR yang ditampilkan.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -646,7 +646,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "F1 Buka Sesi",
-              "description": "",
+              "description": "Dosen → Antarmuka. Data: kelas_id + kredensial dosen.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1315,7 +1315,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "E1 Mahasiwa",
-              "description": "",
+              "description": "Aktor manusia. Login akun kampus, memindai QR, mengirim identitas sesi + autentikasi. Aset terkait: A3 kredensial & token sesi login.",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1432,7 +1432,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "E2 Dosen Pengampu",
-              "description": "",
+              "description": "Aktor manusia. Membuka/menutup sesi kelas yang diampu, memantau daftar hadir. Aset terkait: hak buka/tutup sesi, A6 state sesi.",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1452,7 +1452,7 @@
             },
             "attrs": {
               "text": {
-                "text": "P1 - Antarmuka Web"
+                "text": "P2 - Backend Presensi\n"
               },
               "body": {
                 "stroke": "#333333",
@@ -1548,8 +1548,8 @@
             "id": "28bff4b7-fa85-4929-884f-d06c0786fd16",
             "data": {
               "type": "tm.Process",
-              "name": "P1 - Antarmuka Web",
-              "description": "",
+              "name": "P2 - Backend Presensi\n",
+              "description": "Titik keputusan otoritatif: membuat sesi, memvalidasi QR + keanggotaan + jadwal, mencatat kehadiran, menyusun rekap. Aset terkait: A2 catatan kehadiran, A6 state sesi, A7 ketersediaan layanan.\n",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1669,7 +1669,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "E4 Layanan Autentikasi \nKampus",
-              "description": "",
+              "description": "Sistem eksternal. Memverifikasi kredensial dan menerbitkan token sesi. Aset terkait: A3 identitas & kredensial pengguna.\n",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1790,7 +1790,7 @@
             "data": {
               "type": "tm.Store",
               "name": "DS2 \nPenyimpanan\nSesi",
-              "description": "",
+              "description": "Menyimpan sesi_id, qr_token, expires_at, status sesi (TTL 5 menit). Asumsi: komponen state terpisah/cache. Aset: A1 token QR, A6 state sesi.\n",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1914,7 +1914,7 @@
             "data": {
               "type": "tm.Store",
               "name": "DS1\nDatabase\nAkademik",
-              "description": "",
+              "description": "Menyimpan keanggotaan kelas, jadwal, catatan kehadiran, rekap. Sumber kebenaran (source of truth). Aset: A2 catatan kehadiran, A4 keanggotaan & jadwal, A5 rekap presensi, A8 log/audit trail.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
